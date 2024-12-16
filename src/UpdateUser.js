@@ -19,7 +19,7 @@ const UpdateUser = () => {
     };
 
     return (
-        <div>
+        <div className="update-user-container">
             <h2>Update User</h2>
             <input
                 type="number"

@@ -14,17 +14,17 @@ const UserList = () => {
     };
 
     return (
-        <div>
+        <div className="user-list-container">
             <h2>User List</h2>
             {users.length > 0 ? (
                 users.map((user) => (
-                    <div key={user.id}>
+                    <div key={user.id} className="user-card">
                         <span>{user.name}</span>
                         <button onClick={() => handleDelete(user.id)}>Delete</button>
                     </div>
                 ))
             ) : (
-                <p>No users found.</p>
+                <p className="no-users">No users found.</p>
             )}
         </div>
     );

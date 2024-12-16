@@ -18,7 +18,7 @@ const AddUser = () => {
     };
 
     return (
-        <div>
+        <div className="add-user-container">
             <h2>Add User</h2>
             <input
                 type="text"
